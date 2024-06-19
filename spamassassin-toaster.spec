@@ -90,7 +90,7 @@ Source99:	filter-requires-spamassassin.sh
 Buildroot:	%{_tmppath}/%{name}-root
 Prefix:	%{_prefix}
 Requires:	vpopmail-toaster >= 5.4.17, qmail-toaster, gnupg
-Obsoletes:	perl-Mail-SpamAssassin, spamassassin, perl-spamassassin
+Obsoletes:	perl-Mail-SpamAssassin < 3.5, spamassassin < 3.5, perl-spamassassin < 3.5
 Packager:       Eric Shubert <eric@datamatters.us>
 
 %define	name spamassassin
