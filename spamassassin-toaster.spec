@@ -185,7 +185,9 @@ echo "gcc" > %{_tmppath}/%{name}-%{pversion}-gcc
 #-------------------------------------------------------------------------------
 %{__perl} Makefile.PL DESTDIR=$RPM_BUILD_ROOT/ SYSCONFDIR=%{_sysconfdir} INSTALLDIRS=vendor ENABLE_SSL=yes < /dev/null
 
-%{__make} %{?krb5backcompat:SSLCFLAGS=-DSPAMC_SSL\ -I /usr/include/krb5} OPTIMIZE="$RPM_OPT_FLAGS"
+%{__make}  OPTIMIZE="$RPM_OPT_FLAGS"
+
+
 
 
 #-------------------------------------------------------------------------------
